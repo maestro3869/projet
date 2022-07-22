@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Star wars</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="nice-select2.css">
+  </head>
+  <body>
+    <section class="titre">
+     <h1 >Que la force soit avec toi</h1>
+     <button id="toggle">Ajout d'un personnage</button>
+    </section>
+    
+    
+    
+    <form>
+      <div>
+        <label for="firstname">Prénom: </label>
+        <input type="text" name="" id="firstname" />
+      </div>
+      <div>
+        <label for="name">Nom: </label>
+        <input type="text" name="" id="name" />
+      </div>
+      <div>
+        <label for="url"> Image: </label>
+        <input type="url" name="" id="url" placeholder="l'url de l'image"  />
+      </div>
+      <p>faction: </p>
+      <div>
+        
+        <select name="" id="faction">
+            <option value="" disabled selected>Choisir une faction </option>
+            <option value="jedi">jedi</option>
+            <option value="sith">sith</option>
+            <option value="chasseur de prime">chasseur de prime</option>
+            <option value="Républicains">Républicains</option>
+            <option value="séparatiste">séparatiste</option>
+        </select>
+      </div>
+     
+      
+     <div><ul id="photo">
+        <li class="ligne">
+          <input type="checkbox"  name="image" id="image1">
+          <label class="IMG" for="image1"><img src="sabre-laser-bleu.png"/></label>
+        </li>
+        <li class="ligne">
+          <input type="checkbox"  name="image" id="image2">
+          <label class="IMG" for="image2"><img src="sabre-laser-vert.png"/></label>
+        </li>
+        <li class="ligne">
+          <input type="checkbox"  name="image" id="image3">
+          <label class="IMG"  for="image3"><img src="sabre-laser-rouge.png"/></label>
+        </li>
+        <li class="ligne">
+          <input type="checkbox"  name="image" id="image4">
+          <label class="IMG" for="image4"><img src="sabre-laser-jaune.png"/></label>
+        </li>
+        <li class="ligne">
+          <input type="checkbox"  name="image" id="image5">
+          <label class="IMG" for="image5"><img src="sabre-laser-violet .png"/></label>
+        </li>
+        <li class="ligne">
+          <input type="checkbox"  name="image" id="image6">
+          <label class="IMG" for="image6"><img src="pistolet.png"/></label>
+        </li>
+        <li class="ligne">
+          <input type="checkbox"  name="image" id="image7">
+          <label class="IMG" for="image7"><img src="double-pistolets.png"/></label>
+        </li></ul>
+        
+      
+        
+
+
+       
+      </div>
+      
+      
+     
+     
+    
+    
+     
+      
+      
+      
+      
+      
+      <input type="submit" value="ajout">
+      
+      
+
+    </form>
+    <hr>   
+    <h2>Liste des personnages</h2>
+    <ul id="personnages">
+      
+    </ul>
+    <script src="nice-select2.js" defer></script>
+    <script src="main.js" defer></script>
+  </body>
+</html>
